@@ -1,0 +1,35 @@
+<!Doctype HTML>
+<html>
+	<head>
+		
+		<title>AJAX Country search</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<section class="container">
+			<div class="header">
+				<h1> Wyszukiwarka <br><span>krajów</span></h1>
+				
+			</div>
+
+			<div class="content">
+				<button id="search">Szukaj kraju</button>
+				<input id="country-name" type="text" min="3" placeholder="Country name" required type="text" />
+			</div>
+			<div class="error"></div>
+
+			<ul id="countries">
+			<h2>Lista krajów: </h2>
+				<li>Brak danych</li>
+			</ul>
+		</section>
+	</body>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/first.js"></script>
+	</body>
+</html>

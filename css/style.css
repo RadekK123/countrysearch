@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+section.container {
+
+	margin: 0;
+	position: relative;
+	background: #000 url('https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=74553159742c7cf05c6eb04baabc408c') center/cover;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+section.container .header {
+	display: block;
+	padding-top: 20px;
+	margin: 0;	
+}
+
+h1 {
+	font-size: 40px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-weight: 300;
+	text-shadow: 1px 1px 10px white;
+}
+
+.content {
+	height: 53px;
+	width: 100%;
+}
+
+button {
+	display: inline-block;
+	height: 50px;
+	width: 150px;
+	margin-right: 10px;
+	background-color: rgba(0,0,0, 0.4);
+	border: 1px solid white;
+	box-shadow: 1px 1px 5px white;
+	font-size: 20px;
+	text-shadow: 1px 1px 5px black;
+	font-family: 'Roboto';
+	color: white;
+	text-align: center;
+}
+
+button:focus, input:focus {
+	box-shadow: 1px 1px 15px white;
+	outline: none;
+}
+
+input {
+	display: inline-block;
+	height: 50px;
+	width: 200px;
+	background-color: rgba(0,0,0, 0.4);
+	border: 1px solid white;
+	box-shadow: 1px 1px 5px white;
+	font-size: 20px;
+	text-shadow: 1px 1px 5px black;
+	font-family: 'Roboto';
+	color: white;
+	text-align: center;
+	margin-bottom: 3px;
+}
+
+.error {
+	display: inline-block;
+	height: 40px;
+	width: 80%;
+}
+.error p {
+	font-size: 20px;
+	line-height: 40px;
+	text-shadow: 1px 1px 1px #000;
+	color: red;
+}
+
+#countries {
+	display: inline-block;
+	margin-top: 0px;
+	height: 50vh;
+	width: 50vw;
+	background-color: rgba(0,0,0, 0.5);
+	border-radius: 10px;
+	overflow-y: auto;
+}
+#countries:hover {
+	box-shadow: 0px 0px 15px white;
+}
+
+#countries h2 {
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 20px;
+	color: white;
+	font-weight: 500;
+}
+
+#countries li:first-child {
+	display: inline-block;
+	text-align: center;
+	margin-top: 15px;
+	font-size: 30px;
+	color: white;
+	font-weight: 700;
+	width: 100%;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(0,0,0, 0);
+}
+
+#countries li:not(:first-child) {
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 20px;
+	color: white;
+	font-weight: 500;
+	width: 40%;
+	margin-right: 5%;
+	margin-left: 5%;
+	border-bottom: 1px solid rgba(0,0,0, 0);
+}
+#countries li:nth-child(n):hover {
+	border-bottom: 1px solid white;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+@-webkit-keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+@-webkit-keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
